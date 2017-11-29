@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+              <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+              <!-- Include all compiled plugins (below), or include individual files as needed -->
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+              <!-- self written  css-->
+              <link rel="stylesheet" type="text/css" href="style.css">
+              <center>
+              <div class = "container-fluid">
+                <div class="row" ><br><br><br>
+                  <div class="panel panel-primary">
+                    <div class="panel-heading"><h2>Blush</h2> </div>
+                      <div class="panel-body">
+                        <canvas width="1650" height="600" id="drawArea" class="col-sm-10" align="center" style="width:1650px;height:600px;">
+                        </canvas>
+                      </div>
+                    <div class="panel-footer">
+                      <div class="row">
+                        <div class="col-sm-4">
+                              <b style= "color:rgb(253, 210, 18)" > Shapes</b> <br><br>   <!-- shapes -->   
+                                <div class="col-sm-3">
+                                  <input type="radio" name="shape" value="rectangle" id="rectangleTool"><b style="color:white;">Rectangle</b>
+                                  </input>&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <div class="col-sm-2">
+                                  <input type="radio" name="shape" value="circle" id="circleTool" > <b style = "color:white;">Circle </b>
+                                  </input> &nbsp;&nbsp;&nbsp;
+                                </div>
+                                <div class="col-sm-2">
+                                  <input type="radio" name="shape" value="pencil" id="pencilTool" checked=""> <b style="color:white;">Pencil</b>
+                                  </input>&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <div class="col-sm-2">
+                                  <input type="radio" name="shape" value="line" id="lineTool" > <b style="color:white;">Line</b>
+                                  </input>&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <div class="col-sm-2">
+                                  <select id="linewidth">
+                                  <option value="1">1 px</option>
+                                  <option value="2">2 px</option>
+                                  <option value="3">3 px</option>
+                                  <option value="4">4 px</option>
+                                  </select>
+                                </div>
+                            
+                        </div>
+                <div class="col-sm-4">                  
+                              <b style= "color:rgb(253, 210, 18)"> Options </b><br><br><!-- options to save clear and undo-->
+                              <div class=" col-sm-4">
+                                <a type="button" class="btn btn-success"  id = "download"value="save">
+                                  <span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span> Save
+                                </button>
+                              </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              </div> 
+                              <div class=" col-sm-4">
+                              <button type="button" class="btn btn-danger" id="clear" value="clear">
+                                <span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span> Clear
+                              </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              </div>
+                              <div class=" col-sm-4">
+                              <button type="button" class="btn btn-info" id="undo" value="undo">
+                                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Undo
+                              </button>
+                </div></div>
+                <div class ="col-sm-4">
+                            <B style= "color:rgb(253, 210, 18)" > Colors</B><br><!-- line and filling color -->
+                            <br>
+                            <div class=" col-sm-6" ><b style= "color:white" >Line Color </b>
+                            <input type="color" id="colorPicker">&nbsp;&nbsp; </div>
+                            <div class=" col-sm-6"><b style= "color:white">
+                            Fill Color</b>
+                            <input type="color" id="fillPicker">
+                            </div>   
+                  </div>
+                </div>
+              </div><!-- footer end tag-->
+            </div>
+                  
+          </div>
+        </div>
+        </center>
+                <script src = "options.js">
+
+                </script>
+
+  </body>
+  <footer >
+
+    <center>
+ ©&nbsp;harishganapathi
+    </center>
+    
+  </footer>
+</html>
